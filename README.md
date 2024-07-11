@@ -99,13 +99,14 @@ try:
     # Check if the request was successful (HTTP status code 200)
     if response.status_code == 200:
         # Print the JSON response from the API
-        print("Response:", response.json())
+        print(response.json())
     else:
         print(f"Error: Status code {response.status_code}")
-        print("Response:", response.text)
+        print(response.text)
 
 except requests.exceptions.RequestException as e:
     print("Error:", e)
+
 ```
 
 
