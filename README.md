@@ -4,7 +4,7 @@ This project implements a Flask API that calculates the absolute difference in s
 ## Setup
 Follow these steps to set up and run the Flask API locally:
 
-Prerequisites
+### Prerequisites
 * Python 3.x installed on your system.<br>
 * Postman (for manual API testing).
 
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
-2. The Flask app should now be running on `http://127.0.0.1:5000/.`
+2. The Flask app should now be running on `http://127.0.0.1:5000/calculate.`
 
 # Usage
 ## Endpoint
