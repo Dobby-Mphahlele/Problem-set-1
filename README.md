@@ -33,7 +33,10 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
-2. The Flask app should now be running on `http://127.0.0.1:5000/calculate`.
+2. The Flask app should now be running on:
+```
+http://127.0.0.1:5000/calculate
+```
 
 # Usage
 ## Endpoint
