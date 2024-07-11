@@ -12,7 +12,7 @@ Follow these steps to set up and run the Flask API locally:
 
 ```bash
 
-git clone <repository-url>
+git clone https://github.com/Dobby-Mphahlele/Problem-set-1
 cd <project-directory>
 ``` 
 
