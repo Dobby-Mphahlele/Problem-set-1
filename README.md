@@ -76,7 +76,7 @@ Fri 01 May 2015 13:54:36 -0000
 * Click Send to execute the request.
 * Postman will display the response from the API.
 
-```
+
 # Dockerized Flask Application
 ## This project contains a Dockerized Flask application that calculates the absolute difference in seconds between two timestamps.
 
@@ -134,7 +134,7 @@ Sun 10 May 2015 13:54:36 -0000
 Sat 02 May 2015 19:54:36 +0530
 Fri 01 May 2015 13:54:36 -0000
 ```
-6. Send the request and check the response.
+Send the request and check the response.
 
 # Using Python Script
 You can also test the application using a Python script:
