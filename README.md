@@ -97,8 +97,8 @@ Prerequisites
 ## Clone the Repository
 ### Clone this repository to your local machine:
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Dobby-Mphahlele/Problem-set-1.git
+cd Problem-set-1
 ```
 ## Run the Docker Container
 1. Build the Docker image:
