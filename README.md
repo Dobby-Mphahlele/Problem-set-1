@@ -75,37 +75,6 @@ Fri 01 May 2015 13:54:36 -0000
 ### Send the request:
 * Click Send to execute the request.
 * Postman will display the response from the API.
-## Automated Testing with Python
-A Python script (`test_api.py`) using the `requests` library can be used for automated testing:
-```
-import requests
-
-# Define the URL of your Flask API endpoint
-url = 'http://127.0.0.1:5000/calculate'
-
-# Sample input data (number of test cases and pairs of timestamps)
-input_data = """
-2
-Sun 10 May 2015 13:54:36 -0700
-Sun 10 May 2015 13:54:36 -0000
-Sat 02 May 2015 19:54:36 +0530
-Fri 01 May 2015 13:54:36 -0000
-"""
-
-try:
-    # Send a POST request to the API endpoint with the input data
-    response = requests.post(url, data=input_data.encode('utf-8'))
-
-    # Check if the request was successful (HTTP status code 200)
-    if response.status_code == 200:
-        # Print the JSON response from the API
-        print(response.json())
-    else:
-        print(f"Error: Status code {response.status_code}")
-        print(response.text)
-
-except requests.exceptions.RequestException as e:
-    print("Error:", e)
 
 ```
 # Dockerized Flask Application
@@ -204,7 +173,7 @@ try:
 
 except requests.exceptions.RequestException as e:
     print("Error:", e)
-``
+```
 
 
 
