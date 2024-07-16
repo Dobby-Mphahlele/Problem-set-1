@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
@@ -32,7 +33,7 @@ def process_test_cases(data):
             time_difference = calculate_time_difference(t1, t2)
             results.append(int(time_difference))
 
-        return results
+        return {"id": os.getenv("NODE_ID"), "result": results}
     except Exception as e:
         return {"error": str(e)}
 
@@ -46,4 +47,4 @@ def calculate():
         return jsonify({"error": str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
