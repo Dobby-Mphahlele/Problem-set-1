@@ -109,8 +109,8 @@ Before running this application, ensure you have the following installed on your
 Clone this repository to your local machine:
 
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Dobby-Mphahlele/Problem-set-1.git
+cd Problem-set-1
 ```
 ### Build and Run the Docker Container
 1. Build the Docker image:
@@ -128,7 +128,7 @@ You can pull and run the Docker image from Docker Hub using the following comman
 
 ## Pull the Docker Image
 ```
-docker pull your-dockerhub-username/my-python-app:latest
+docker pull dobbym814/my-python-app:latest
 ```
 ## Create a Docker Network
 If not already created, create a Docker network:
@@ -138,8 +138,8 @@ docker network create my_bridge_network
 ## Run the Docker Container
 Run two instances of the Docker container:
 ```
-docker run -d --network my_bridge_network -p 5001:5000 --name node1 -e NODE_ID=node1 your-dockerhub-username/my-python-app:latest
-docker run -d --network my_bridge_network -p 5002:5000 --name node2 -e NODE_ID=node2 your-dockerhub-username/my-python-app:latest
+docker run -d --network my_bridge_network -p 5001:5000 --name node1 -e NODE_ID=node1 dobbym814/my-python-app:latest
+docker run -d --network my_bridge_network -p 5002:5000 --name node2 -e NODE_ID=node2 dobbym814/my-python-app:latest
 ```
 Testing the Application
 You can test the application using Postman or a Python script.
